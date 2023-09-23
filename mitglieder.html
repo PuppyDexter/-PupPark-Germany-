@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_mitglieder.css">
+        <link rel="icon" type="image/x-icon" href="/images/pp_flag.jpg">
+        <title>PupPark Germany</title>
+    </head>
+    <body>
+        <header id="header" style="width: 1860px;">
+            <h1 id="h1">PupPark Germany</h1>
+        </header>
+        <div class="dropdown">
+            <button class="button">Teammitglieder</button>
+            <div class="content">
+                <a href="startseite.html">Startseite</a>
+                <a href="discord.html">Discord-Server</a>
+                <!--<a href="mitglieder.html">Team Mitglieder</a>!-->
+            </div>
+        </div>
+        <div id="besch_seite">
+            <h1 id="unser_team">Unser Team</h1>
+            <p id="p1">Das Team unseres Server ist für alles Managementbezogene zuständig. Das heißt als Mitglied kümmerst du dich um die Punkte:</p>
+            <ol id="aufgaben_li">
+                <li>👨‍⚖️Moderation</li>
+                <li>🆘Support</li>
+                <li>👋Verifizierung</li>
+            </ol>
+            <dl id="beschreibung_aufgaben">
+                <dt id="dt_aufgaben">👨‍⚖️Moderation</dt>
+                <dd id="dd_aufgaben">Du kümmerst dich um die Sicherheit des Servers. Wenn zum Beispiel ein Fall von Spam vor liegt, kümmerst du dich um die Konsequenzen
+                    <br>(Warn, Timeout, Kick, Ban).</dd>
+                <br>
+                <dt id="dt_aufgaben">🆘Support</dt>
+                <dd id="dd_aufgaben">Du stehst allen Servermitgliedern bei Fragen, Problemen und weiterem zur Verfügung. Beispielsweise im Ticket-Support.</dd>
+                <br>
+                <dt id="dt_aufgaben">👋Verifizierung</dt>
+                <dd id="dd_aufgaben">Du kümmerst dich darum, dass neue Mitglieder Gebührend empfangen werden. Wenn diese hilfe bei der Verifizierung benötigen fällt dies ebenso
+                    <br>in dein Aufgabengebiet. Ist die Vorstellung fertig und du bist mit dieser einverstanden vergibst du die passende Rolle.</dd>
+            </dl>
+        </div>
+        <div id="team">
+            <h1 id="die_teammitglieder">Die Teammitglieder</h1>
+            <span>
+            <img id="owner" src="/images/Owner.jpg">
+            <ul id="besch_owner">
+                <li>Name: Shyrox</li>
+                <li>Team-Position: Owner</li>
+                <li>Beziehungsstatus: Vergeben</li>
+                <li>Rolle: Alpha</li>
+            </ul>
+            </span>
+            <span>
+                <img id="co_owner" src="/images/Co-Owner.jpg">
+                <ul id="besch_coowner">
+                    <li>Name: Dexter</li>
+                    <li>Team-Position: Co-Owner</li>
+                    <li>Beziehungsstatus: Vergeben</li>
+                    <li>Rolle: Puppy</li>
+                </ul>
+            </span>
+        </div>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDGWdJ_xunvEzy7lCBywIRh2r1fmGmxpDg",
+              authDomain: "puppark-germany.firebaseapp.com",
+              projectId: "puppark-germany",
+              storageBucket: "puppark-germany.appspot.com",
+              messagingSenderId: "414874965349",
+              appId: "1:414874965349:web:ecb61483fd83938636fd8c",
+              measurementId: "G-XLQM11E1W3"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+    </body>
